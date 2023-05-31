@@ -33,9 +33,9 @@ export default function TelescopingRun() {
                             </TContent>
                         </p>
                         <TContent tkey="hurting">
-                            let me know if there’s anything i can do, please please please i am open to talking about any aspect of it, i want to know how the hurt feels and what bothers you <TPrompt tkey="and---">and--</TPrompt>
+                            let me know if there’s anything i can do, please please please i am open to talking about any aspect of it, i want to know how the hurt feels and what bothers you <TPrompt tkey="and—">and&mdash;</TPrompt>
                         </TContent>
-                        <TContent tkey="and---">
+                        <TContent tkey="and—">
                             <p>you made it clear to me that our <TPrompt tkey="agreement">agreement</TPrompt> is important to you. trust is important in a relationship.</p>
                             <TContent tkey="agreement">
                                 <p>you forgave me quickly. monogamy is important to you, and you were <TPrompt tkey="willing">willing</TPrompt> to compromise for me.</p>
@@ -44,9 +44,11 @@ export default function TelescopingRun() {
                                     <TContent tkey="ass">
                                         <p>if i was naman, would i <TPrompt tkey="myself">take myself</TPrompt> back?</p>
                                         <TContent tkey="myself">
-                                            <p>i already made it clear once is okay repeated is not. i already made it clear that trust is rlly important to me, and you continued to break it, *willingly*. even after u realized u fucked up, u did it again. based on previous actions, there is good chance you'll break a <TPrompt tkey="promise">promise</TPrompt> in the future, and that would hurt after i cared about u so much.</p>
+                                            <p>i already made it clear once is okay repeated is not. i already made it clear that trust is rlly important to me, and you continued to break it, <i>willingly</i>. even after u realized u fucked up, u did it again. based on previous actions, there is good chance you'll break a <TPrompt tkey="promise">promise</TPrompt> in the future, and that would hurt after i cared about u so much.</p>
                                             <TContent tkey="promise">
-                                                <p>if i were you, would i take myself back? i don't know. seems like, very possibly <TPrompt tkey="no">no</TPrompt>.</p>
+                                                <p>if i were you, would i take myself back? i don't know. seems like, very possibly no.
+                                                    {/* <TPrompt tkey="no">no</TPrompt>. */}
+                                                </p>
                                             </TContent>
                                         </TContent>
                                     </TContent>
@@ -169,14 +171,20 @@ export default function TelescopingRun() {
                     i'm <TPrompt tkey="learning">learning</TPrompt>.
                 </p>
                 <TContent tkey="learning">
-                    <p>some lessons:</p>
+                    <p><i>laura, the past is outside your circle of control. feeling bad for a few more hours won't do anything.{" "}</i>
+                        <TPrompt tkey='twitter'>all i can do rn</TPrompt>{" "}
+                        is explore a framework for preventing this in the future. <i>a mistake made 2x is a decision.</i>
+                    </p>
+                </TContent>
+                <TContent tkey="twitter">
 
                     <iframe
                         src="https://typefully.com/t/STmqAGX"
                         title="lessons"
-                        style={{ width: '100%', height: '800px', }}
-                        className="my-16 shadow-2xl shadow-amber-200 rounded-md"
+                        style={{ width: '100%', height: '1750px', }}
+                        className="mb-16 mt-6 shadow-2xl shadow-amber-200 rounded-md"
                     />
+                    <p className="text-sm relative -top-12 font-semibold text-stone-500">exhibit a: apparently, the format of twitter threads tricks my brain into consolidating takeaways better</p>
                     <p>
                         there is a way in which, that night i said "i don't want to hurt you. i won't do this again" and now, i realize, even at that time it was a half-lie. at that time, i didn't fully believe that, commit to it, comprehend at what scale how bad doing this is. i realize this now, because, i think now i do. there is a way in which i didn't ask uli to come to the gym with me, because scootering with him with my arms around his neck (to hold on) would feel wrong. there is a way my chest clenches and i feel a cold resolve in my heart that i do not fucking want to cheat again. i don't want to hug or do smtn platonic if i know that this might lead to something more. i don't want it. it feels bad. i did not feel such resolve 2 nights ago. the cold resolve to the point where i'm willing to commit to losing 10k if i break this promise with you again. at this group house, or afterwards.
                     </p>
@@ -200,7 +208,7 @@ export default function TelescopingRun() {
                 <TContent tkey="i don't love you less">
                     <p>
                         {/* <TContent tkey="thank you"> */}
-                        thank you for showing me how it feels <TPrompt tkey="thank you2">to</TPrompt> feel safe. <TContent tkey="thank you2"><TPrompt tkey="thank you3">to</TPrompt> feel at <TPrompt tkey="home">home</TPrompt><TContent tkey="home">, my heart melting when you told me, if you aren't ready to have unshaking faith in yourself, i will</TContent>. </TContent><TContent tkey="thank you3"><TPrompt tkey="thank you4">to</TPrompt> love, truly, with all my heart.</TContent><TContent tkey="thank you4"> <TPrompt tkey="thank you5">to</TPrompt> want someone else badly, desiring you was when i realized, for sure this time, that i’m not asexual.</TContent> <TContent tkey="thank you5"><TPrompt tkey="sorry">to</TPrompt> see a possibility of long-term.</TContent>
+                        thank you for showing me how it feels <TPrompt tkey="thank you2">to</TPrompt> feel safe. <TContent tkey="thank you2"><TPrompt tkey="thank you3">to</TPrompt> feel at <TPrompt tkey="home">home</TPrompt><TContent tkey="home">, my heart melting when you told me, <i>if you aren't ready to have unshaking faith in yourself, i will</i></TContent>. </TContent><TContent tkey="thank you3"><TPrompt tkey="thank you4">to</TPrompt> love, truly, with all my heart.</TContent><TContent tkey="thank you4"> <TPrompt tkey="thank you5">to</TPrompt> want someone else badly, desiring you was when i realized, for sure this time, that i’m not asexual.</TContent> <TContent tkey="thank you5"><TPrompt tkey="sorry">to</TPrompt> see a possibility of long-term.</TContent>
                         {/* </TContent> */}
                     </p>
                     <TContent tkey="sorry">
@@ -226,8 +234,9 @@ export default function TelescopingRun() {
                         </p>
                         <img src="/laura-signature.png" width={200}></img>
                         <p>
-                            your (ex?-)partner,<br />
-                            laura
+                            laura<br />
+
+                            <span className='text-stone-500 text-lg'>your (ex?-)partner</span>
                         </p>
                         <div className='text-base mt-24'>
                             <p>
@@ -247,13 +256,54 @@ export default function TelescopingRun() {
                                     </p> */}
                                     {/* outrageous hyperbolic negative reactions seem bad tbh */}
                                     <p>tell meeeeeeee</p>
-                                    {/* <p>PPS</p> */}
+                                    <div className="mt-16">
+                                        <TPrompt tkey='PPS'>PPS.</TPrompt>
+
+                                        <TContent tkey="PPS">
+                                            I <TPrompt tkey="love">LOVE</TPrompt> YOU <TContent tkey="love">i <TPrompt tkey="love1">love</TPrompt> you,
+                                                <TContent tkey="love1">
+                                                    i <TPrompt tkey="love2">love</TPrompt> you,
+                                                    <TContent tkey="love2">
+                                                        i <TPrompt tkey="love3">love</TPrompt> you,
+                                                        <TContent tkey="love3">
+                                                            {/* i still do, this didn’t change at all, i promise (not that it means anything), */}
+                                                            i <TPrompt tkey="still">still</TPrompt> do,{" "}
+
+                                                            <TContent tkey="still">this didn’t change <TPrompt tkey="change">at all</TPrompt>,{" "}</TContent>
+                                                            <TContent tkey="change">
+                                                                i{" "}
+                                                                <TPrompt tkey="promise">
+                                                                    promise
+                                                                </TPrompt>
+                                                                <TContent tkey="promise">
+                                                                    (not that it means anything)
+                                                                </TContent>,{" "}
+                                                                i <TPrompt tkey="love4">love</TPrompt> you.
+                                                            </TContent>
+                                                        </TContent>
+                                                    </TContent>
+                                                </TContent>
+                                            </TContent>
+
+                                            {/* I LOVE YOU i <TPrompt tkey="love1">love</TPrompt> you, i love you, i love you, i still do, this didn’t change at all, i promise (not that it means anything), i love you. */}
+                                        </TContent>
+                                        <TContent tkey="love4">
+                                            <p>i <TPrompt tkey="love5">love</TPrompt> you 😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭</p>
+                                        </TContent>
+                                        <TContent tkey="love5">
+                                            <p>i <s>wanted</s> want to spend my life with you 😭😭😭😭😭😭😭😭😭 no one else has ever felt feels like home the way <TPrompt tkey="jeopardized">you</TPrompt> do. <s>i still can’t believe i did something that jeopardized something that matters to me this much, mistakes of this scale is really out of character for laura, i thought i would never be this stupid, i really did</s></p>
+                                            <TContent tkey="jeopardized">
+                                                <p>sometimes, i wish that my conscience lets me beg for you to <TPrompt tkey="back">take me back</TPrompt>. i want to beg. i tried to constrain this in the main text, but here, i want to let it all out. i want to scream and cry while video calling you and let you see my tear-stained cheeks. but that feels, wrong or something, i don’t want you to pressure you into making a decision. i deserve it if we break up, i know i do. if you choose to stay, i want it to be because you want it.</p>
+                                            </TContent>
+                                        </TContent>
+                                    </div>
+
                                 </TContent>
                             </p>
                         </div>
                     </TContent>
 
-                </TContent>
+                </TContent >
                 {/* <p>you were everything I can ask for, and more.</p> */}
             </div >
         </telescopingStatesContext.Provider >

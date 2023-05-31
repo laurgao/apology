@@ -1,6 +1,3 @@
-
-// true means open, false means closed
-
 import { useState } from "react";
 import Intro from "./components/Intro";
 import TelescopingRun from "./components/TelescopingRun";
